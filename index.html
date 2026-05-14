@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>韩坤燕 | 个人简历网站</title>
+    <meta
+      name="description"
+      content="韩坤燕的个人简历网站，展示工作经历、摄影作品、个人性格与校内经历。"
+    />
+    <link rel="stylesheet" href="styles.css?v=white-bg-20260514" />
+  </head>
+  <body>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="回到首页">
+        <span class="brand-mark">韩</span>
+        <span>
+          <strong>韩坤燕</strong>
+          <small>QA · Photo · Campus</small>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="页面导航">
+        <a href="#work">工作经历</a>
+        <a href="#photography">摄影</a>
+        <a href="#personality">性格</a>
+        <a href="#campus">校内</a>
+      </nav>
+
+      <button class="icon-button" id="themeToggle" type="button" aria-label="切换主题">
+        <svg aria-hidden="true" viewBox="0 0 24 24">
+          <path d="M12 3v2.1M12 18.9V21M4.6 4.6l1.5 1.5M17.9 17.9l1.5 1.5M3 12h2.1M18.9 12H21M4.6 19.4l1.5-1.5M17.9 6.1l1.5-1.5" />
+          <circle cx="12" cy="12" r="4.2" />
+        </svg>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="cover" aria-labelledby="coverTitle">
+        <div class="cover-copy">
+          <p class="eyebrow">软件测试助理工程师 / 摄影爱好者</p>
+          <h1 id="coverTitle">韩坤燕</h1>
+          <p class="cover-line">用测试追踪问题路径，用摄影记录光影变化。</p>
+
+          <div class="title-wall" aria-label="首屏标题入口">
+            <a class="title-chip" href="#work">
+              <span>01</span>
+              <strong>工作经历</strong>
+            </a>
+            <a class="title-chip" href="#photography">
+              <span>02</span>
+              <strong>摄影作品</strong>
+            </a>
+            <a class="title-chip" href="#personality">
+              <span>03</span>
+              <strong>个人性格</strong>
+            </a>
+            <a class="title-chip" href="#campus">
+              <span>04</span>
+              <strong>校内展示</strong>
+            </a>
+          </div>
+        </div>
+
+        <div class="cover-art" data-tilt>
+          <img src="assets/character-hero.webp" alt="韩坤燕卡通形象" />
+          <div class="cover-badge">深圳 · 2025届本科</div>
+        </div>
+
+        <a class="scroll-cue" href="#work" aria-label="向下浏览">
+          <span></span>
+        </a>
+      </section>
+
+      <section class="story-panel work-panel" id="work" aria-labelledby="workTitle">
+        <div class="panel-title">
+          <p class="eyebrow">Chapter 01</p>
+          <h2 id="workTitle">工作经历</h2>
+        </div>
+        <div class="panel-body work-body">
+          <figure class="story-art work-art" data-tilt>
+            <img src="assets/card-testing.webp" alt="软件测试主题卡通插画" />
+          </figure>
+          <article class="reveal-card is-open">
+            <h3>软件测试与流程跟进经历</h3>
+            <p>
+              具备软件测试、数据处理和流程跟进经验，熟悉功能测试、异常场景验证、缺陷复现反馈及回归验证流程。
+            </p>
+            <div class="metric-grid">
+              <div><strong>68</strong><span>平均日执行用例</span></div>
+              <div><strong>3-6</strong><span>平均日发现 Bug</span></div>
+              <div><strong>400+</strong><span>有效缺陷记录</span></div>
+              <div><strong>350+</strong><span>回归验证完成</span></div>
+            </div>
+            <button class="detail-toggle" type="button" aria-expanded="true">收起工作简历</button>
+            <div class="detail-content">
+              <div class="work-timeline">
+                <article>
+                  <time>2025.07 - 2026.04</time>
+                  <h4>菱洋电子（上海）有限公司深圳分公司 · 软件测试工程师</h4>
+                  <p>参与 TCL 电视项目 RT2881、RT2875P、RT2885P 显示屏多媒体模块测试，覆盖视频、音频播放、图片浏览、U 盘识别和用户 UI 等功能。</p>
+                  <ul>
+                    <li>使用 TCL 自主研发自动化测试工具执行多媒体模块自动化测试。</li>
+                    <li>完成异常场景检查、回归测试、缺陷记录、问题复现和反馈。</li>
+                    <li>协助研发和测试团队定位问题，推动缺陷修复与版本验证。</li>
+                  </ul>
+                </article>
+                <article>
+                  <time>2023.12</time>
+                  <h4>悦星华电子有限公司 · 跟单文员</h4>
+                  <p>负责电子元器件及产品订单流程跟进，包括订单录入、生产和采购进度协调、出货安排等，积累流程管理、信息核对和跨部门沟通经验。</p>
+                </article>
+                <article>
+                  <time>2023.08；2025.03 - 2025.05</time>
+                  <h4>廉江市气象局 / 藤县气象局 · 气象预报员</h4>
+                  <p>学习气象预报业务软件使用，参与天气预报、预警信息发布、历史天气证明查询、信息核对与服务沟通。</p>
+                </article>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="story-panel alt wide-panel" id="photography" aria-labelledby="photoTitle">
+        <div class="panel-title">
+          <p class="eyebrow">Chapter 02</p>
+          <h2 id="photoTitle">摄影照片墙</h2>
+        </div>
+        <div class="photo-stage">
+          <article class="reveal-card photo-intro">
+            <h3>把观察力留在画面里</h3>
+            <p>
+              摄影作品以天空、海面、山体、枝影和自然光为主。照片墙展示她对光线、留白、构图和氛围的观察，也对应测试岗位中对细节和异常变化的敏感度。
+            </p>
+            <div class="tag-list">
+              <span>日落</span>
+              <span>枝影</span>
+              <span>雪山</span>
+              <span>蓝天绿叶</span>
+            </div>
+          </article>
+          <div class="photo-wall" aria-label="摄影作品照片墙">
+            <button class="photo-tile tall" type="button" data-photo="assets/photo-sunset-sea.webp" data-title="海面日落">
+              <img src="assets/photo-sunset-sea.webp" alt="海面日落摄影作品" />
+              <span>海面日落</span>
+            </button>
+            <button class="photo-tile wide" type="button" data-photo="assets/photo-branches-sunset.webp" data-title="枝影落日">
+              <img src="assets/photo-branches-sunset.webp" alt="枝影落日摄影作品" />
+              <span>枝影落日</span>
+            </button>
+            <button class="photo-tile wide" type="button" data-photo="assets/photo-snow-mountain.webp" data-title="雪山云影">
+              <img src="assets/photo-snow-mountain.webp" alt="雪山云影摄影作品" />
+              <span>雪山云影</span>
+            </button>
+            <button class="photo-tile tall" type="button" data-photo="assets/photo-green-sky.webp" data-title="蓝天绿叶">
+              <img src="assets/photo-green-sky.webp" alt="蓝天绿叶摄影作品" />
+              <span>蓝天绿叶</span>
+            </button>
+            <button class="photo-tile wide" type="button" data-photo="assets/photo-city-view.webp" data-title="城市远眺">
+              <img src="assets/photo-city-view.webp" alt="城市远眺摄影作品" />
+              <span>城市远眺</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="story-panel" id="personality" aria-labelledby="personalityTitle">
+        <div class="panel-title">
+          <p class="eyebrow">Chapter 03</p>
+          <h2 id="personalityTitle">个人性格</h2>
+        </div>
+        <div class="panel-body">
+          <figure class="story-art" data-tilt>
+            <img src="assets/card-photo.webp" alt="摄影观察主题卡通插画" />
+          </figure>
+          <article class="reveal-card">
+            <h3>细致、稳定、愿意把事情闭环</h3>
+            <p>
+              从测试经历、跟单经历和气象局实习中，可以看出她适合需要耐心核对、持续跟进和跨团队沟通的工作环境。
+            </p>
+            <div class="trait-grid">
+              <div>
+                <strong>严谨核对</strong>
+                <span>能够在用例、订单、气象资料中保持信息准确。</span>
+              </div>
+              <div>
+                <strong>问题意识</strong>
+                <span>遇到异常会记录、复现、反馈，并推动后续验证。</span>
+              </div>
+              <div>
+                <strong>服务沟通</strong>
+                <span>具备对接研发、测试、生产采购和群众服务的沟通基础。</span>
+              </div>
+              <div>
+                <strong>审美观察</strong>
+                <span>摄影习惯让她对画面、细节和用户感受更敏感。</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="story-panel alt" id="campus" aria-labelledby="campusTitle">
+        <div class="panel-title">
+          <p class="eyebrow">Chapter 04</p>
+          <h2 id="campusTitle">校内展示</h2>
+        </div>
+        <div class="panel-body">
+          <figure class="story-art" data-tilt>
+            <img src="assets/card-weather.webp" alt="气象数据主题卡通插画" />
+          </figure>
+          <article class="reveal-card">
+            <h3>应用气象学背景与校园项目</h3>
+            <div class="campus-grid">
+              <article>
+                <span>教育背景</span>
+                <p>2021.09 - 2025.06，广东海洋大学，应用气象学本科。</p>
+              </article>
+              <article>
+                <span>主修课程</span>
+                <p>统计天气预报、Python 基础、Python 气象资料可视化、气象灾害风险评估、大气探测学等。</p>
+              </article>
+              <article>
+                <span>校园项目</span>
+                <p>2023.07 暑期“三下乡”活动项目负责人之一，参与项目策划、调研执行、现场协调和成果整理。</p>
+              </article>
+              <article>
+                <span>项目成果</span>
+                <p>负责“稻虾共养”农业模式资料采集、摄影记录和宣传内容整理，项目获得校级优秀“三下乡”项目提名。</p>
+              </article>
+              <article>
+                <span>证书荣誉</span>
+                <p>大学英语四级、普通话二级甲、国家励志奖学金、优秀班干部、软件著作权一项。</p>
+              </article>
+              <article>
+                <span>工具基础</span>
+                <p>Python 基础、Linux 基础、Excel 数据整理、ArcGIS 基础。</p>
+              </article>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-panel" id="contact" aria-labelledby="contactTitle">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contactTitle">欢迎联系韩坤燕</h2>
+          <p>广东深圳 · 18172527728 · kuny_han@163.com</p>
+        </div>
+        <div class="contact-actions">
+          <button class="button primary" type="button" id="copyEmail" data-email="kuny_han@163.com">复制邮箱</button>
+          <a class="button" href="tel:18172527728">拨打电话</a>
+          <button class="button" type="button" id="printButton">打印简历</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>韩坤燕</span>
+      <span>工作经历 · 摄影 · 性格 · 校内展示</span>
+      <span>© 2026</span>
+    </footer>
+
+    <div class="photo-lightbox" id="photoLightbox" aria-hidden="true">
+      <button class="lightbox-close" type="button" aria-label="关闭照片预览">×</button>
+      <img alt="" />
+      <strong></strong>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
