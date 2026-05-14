@@ -895,16 +895,41 @@ h3 {
     padding-right: 16px;
   }
 
+  .site-header {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 14px 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
   .brand small {
     display: none;
   }
 
+  .icon-button {
+    grid-column: 2;
+    grid-row: 1;
+    width: 40px;
+    min-height: 40px;
+  }
+
+  .nav {
+    grid-column: 1 / -1;
+    gap: 6px;
+    justify-content: space-between;
+    overflow-x: visible;
+  }
+
   .nav a {
-    min-width: 78px;
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 8px 4px;
+    font-size: 0.95rem;
+    line-height: 1.15;
   }
 
   h1 {
-    font-size: 3.25rem;
+    font-size: 2.95rem;
   }
 
   h2 {
@@ -912,10 +937,40 @@ h3 {
   }
 
   .cover-line {
+    margin-bottom: 22px;
     font-size: 1.04rem;
   }
 
-  .title-wall,
+  .cover {
+    gap: 28px;
+    padding: 32px 0 56px;
+  }
+
+  .title-wall {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .title-chip {
+    min-height: 72px;
+    padding: 12px;
+    gap: 8px;
+  }
+
+  .title-chip strong {
+    font-size: 1.05rem;
+  }
+
+  .cover-art {
+    width: min(100%, 310px);
+    justify-self: center;
+  }
+
+  .cover-art img {
+    height: clamp(360px, 58vh, 460px);
+    max-height: none;
+  }
+
   .metric-grid,
   .trait-grid,
   .campus-grid {
