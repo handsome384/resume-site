@@ -971,6 +971,20 @@ h3 {
     max-height: none;
   }
 
+  .panel-title,
+  .story-art,
+  .reveal-card,
+  .photo-tile,
+  .mini-card {
+    opacity: 1;
+    transform: none;
+  }
+
+  .photo-tile,
+  .mini-card {
+    transition-delay: 0ms;
+  }
+
   .metric-grid,
   .trait-grid,
   .campus-grid {
@@ -990,7 +1004,38 @@ h3 {
 
   .story-panel {
     min-height: 0;
-    padding: 64px 0;
+    gap: 18px;
+    padding: 38px 0;
+    scroll-margin-top: 132px;
+  }
+
+  .panel-title {
+    position: static;
+  }
+
+  .panel-title .eyebrow {
+    margin-bottom: 8px;
+  }
+
+  .panel-body {
+    gap: 18px;
+  }
+
+  .story-art {
+    display: none;
+  }
+
+  .photo-stage,
+  .experience-stack {
+    grid-column: auto;
+  }
+
+  .photo-intro {
+    margin-bottom: 0;
+  }
+
+  .photo-wall {
+    grid-auto-rows: 190px;
   }
 
   .reveal-card,
