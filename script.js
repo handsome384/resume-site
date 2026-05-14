@@ -1,5 +1,4 @@
 const root = document.documentElement;
-const themeToggle = document.querySelector("#themeToggle");
 const printButton = document.querySelector("#printButton");
 const copyEmail = document.querySelector("#copyEmail");
 const toast = document.querySelector("#toast");
@@ -16,10 +15,7 @@ const reelTitle = document.querySelector("#reelTitle");
 const reelIndex = document.querySelector("#reelIndex");
 const reelDots = document.querySelector("#reelDots");
 
-const savedTheme = localStorage.getItem("personal-theme");
-if (savedTheme) {
-  root.dataset.theme = savedTheme;
-}
+localStorage.removeItem("personal-theme");
 
 const memories = [
   { src: "assets/photo-sunset-sea.webp", title: "海面日落", alt: "回忆照片：海面日落" },
@@ -77,17 +73,6 @@ function pauseMemories() {
   window.clearInterval(memoryTimer);
   memoryTimer = null;
 }
-
-themeToggle?.addEventListener("click", () => {
-  const nextTheme = root.dataset.theme === "night" ? "" : "night";
-  if (nextTheme) {
-    root.dataset.theme = nextTheme;
-    localStorage.setItem("personal-theme", nextTheme);
-  } else {
-    delete root.dataset.theme;
-    localStorage.removeItem("personal-theme");
-  }
-});
 
 printButton?.addEventListener("click", () => window.print());
 
